@@ -52,7 +52,7 @@ main {
     display: flex;
     align-items: center;
 
-    background-image: url("/smartgrow-fundo.png");
+    background-image: url("smartgrow-fundo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
