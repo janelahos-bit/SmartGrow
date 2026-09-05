@@ -1033,3 +1033,318 @@ h3 {
 
     font-size: 1.1rem;
 }
+
+
+/* =========================================
+   BOTÃO VOLTAR AO TOPO
+========================================= */
+
+.back-to-top-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.back-to-top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 11px 20px;
+    border-radius: 30px;
+
+    background-color: var(--verde);
+    color: var(--branco);
+
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    box-shadow: 0 8px 20px var(--sombra);
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: var(--verde-escuro);
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+/* Tablets e telas menores */
+@media (max-width: 1100px) {
+    .header {
+        padding: 18px 3%;
+        gap: 15px;
+    }
+
+    .nav {
+        gap: 16px;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .btn-app {
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+
+    .hero-tech {
+        right: 5%;
+        transform: translateY(-50%) scale(0.82);
+        transform-origin: center right;
+    }
+
+    .hero-content {
+        max-width: 58%;
+        margin-left: 4%;
+    }
+
+    .solution-content,
+    .ia-content {
+        gap: 40px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        max-width: 100%;
+    }
+
+    .btn-app {
+        display: none;
+    }
+
+    .hero-content {
+        max-width: 70%;
+        margin-left: 5%;
+        padding-top: 155px;
+    }
+
+    .hero-tech {
+        right: 1%;
+        transform: translateY(-50%) scale(0.68);
+    }
+
+    .hero-menu {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero-menu-item {
+        min-height: 75px;
+        padding: 14px 8px;
+    }
+
+    .hero-menu-item:nth-child(4n) {
+        border-right: none;
+    }
+
+    .problem-grid,
+    .benefit-grid,
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .solution-content,
+    .ia-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .header {
+        padding: 14px 4%;
+    }
+
+    .logo {
+        font-size: 1.55rem;
+    }
+
+    .nav {
+        width: 100%;
+        gap: 5px 12px;
+    }
+
+    .nav-link {
+        font-size: 0.76rem;
+        padding: 5px 0;
+    }
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 165px 6% 245px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(3.2rem, 15vw, 5rem);
+        letter-spacing: -2px;
+    }
+
+    .hero-content h2 {
+        font-size: clamp(1.45rem, 6vw, 2.2rem);
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 13px 20px;
+    }
+
+    .hero-tech {
+        display: none;
+    }
+
+    .hero-menu {
+        left: 4%;
+        right: 4%;
+        bottom: 12px;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 16px;
+    }
+
+    .hero-menu-item,
+    .hero-menu-item:nth-child(4n) {
+        min-height: 65px;
+        padding: 10px 6px;
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .hero-menu-item:nth-child(2n) {
+        border-right: none;
+    }
+
+    .hero-menu-item:nth-last-child(-n + 2) {
+        border-bottom: none;
+    }
+
+    .hero-menu-icon {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .hero-menu-title {
+        font-size: 0.8rem;
+        margin-bottom: 3px;
+    }
+
+    .hero-menu-description {
+        display: none;
+    }
+
+    .section {
+        padding: 70px 6%;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: clamp(1.8rem, 8vw, 2.6rem);
+    }
+
+    .section-title p {
+        font-size: 1rem;
+    }
+
+    .problem-grid,
+    .benefit-grid,
+    .technology-grid,
+    .steps,
+    .solution-highlight {
+        grid-template-columns: 1fr;
+    }
+
+    .problem-card,
+    .step,
+    .highlight-item,
+    .benefit-card,
+    .technology-card {
+        padding: 25px;
+    }
+
+    .ia-content {
+        gap: 35px;
+    }
+
+    .ia-flow {
+        flex-direction: column;
+    }
+
+    .ia-arrow {
+        transform: rotate(90deg);
+    }
+
+    .section-contato {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .back-to-top-container {
+        margin-top: 40px;
+    }
+
+    .back-to-top {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+/* Celulares muito pequenos */
+@media (max-width: 420px) {
+    .nav {
+        gap: 4px 9px;
+    }
+
+    .nav-link {
+        font-size: 0.7rem;
+    }
+
+    .hero-content {
+        padding-top: 155px;
+    }
+
+    .hero-menu-title {
+        font-size: 0.74rem;
+    }
+}
